@@ -32,7 +32,6 @@
     .navbar-toggler {
         z-index: 1;
     }
-
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
@@ -73,10 +72,7 @@
 /*  body {
     overflow: hidden;
   }*/
-
-
   /* Preloader */
-
   #preloader {
     position: fixed;
     top: 0;
@@ -85,10 +81,9 @@
     bottom: 0;
     background-color: #fff;
     /* change if the mask should have another color then white */
-    z-index: 99;
+    z-index: 999999;
     /* makes sure it stays on top */
   }
-
   #status {
     width: 200px;
     height: 200px;
@@ -102,6 +97,7 @@
     background-repeat: no-repeat;
     background-position: center;
     margin: -100px 0 0 -100px;
+    overflow: hidden;
     /* is width and height divided by two */
   }
   </style>
@@ -115,6 +111,34 @@
     });
   })
   </script>
+
+  <!-- FB feed -->
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Twitter feed -->
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
 
 
     <!-- Navigation -->
@@ -136,7 +160,7 @@
                         <a class="nav-link" href="#about">Sponsors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Team</a>
+                        <a class="nav-link" href="#team">Feeds</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -161,7 +185,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">ABOUT US</h2>
-                    <p class="text-muted">When we say Enthusia is one of the biggest sports festivals in India, It's no exaggeration! Graced with some of the best sports facilities one could ask for, this annual festival is sure to set your heartbeat racing, and give you that adrenaline rush once again. Some of the most skilled and talented sportsmen will lock horns in front of hoards of fans spurring the players on to bring the best out of them. V.J.T.I. can boast of having a cricket ground, a football ground, basketball court, tennis clay courts (one of the few in India!), carrom and table tennis facilities, a badminton court, and lots more. Enthusia provides ample opportunities to develop your creativity, leadership qualities, team building and managerial skills. Our vision is to nurture sports talent and make realize their full potential.</p>
+                    <p id="about_text">When we say Enthusia is one of the biggest sports festivals in India, It's no exaggeration! Graced with some of the best sports facilities one could ask for, this annual festival is sure to set your heartbeat racing, and give you that adrenaline rush once again. Some of the most skilled and talented sportsmen will lock horns in front of hoards of fans spurring the players on to bring the best out of them. V.J.T.I. can boast of having a cricket ground, a football ground, basketball court, tennis clay courts (one of the few in India!), carrom and table tennis facilities, a badminton court, and lots more. Enthusia provides ample opportunities to develop your creativity, leadership qualities, team building and managerial skills. Our vision is to nurture sports talent and make realize their full potential.</p>
                 </div>
             </div>
         </div>
@@ -338,73 +362,24 @@
         </div>
     </section>
 
-    <!-- Team -->
+     <!-- Feed -->
     <section class="bg-faded" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h2 class="section-heading">Social</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fenthusia.vjti&tabs=timeline&width=600&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="600" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets by TwitterDev</a> 
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
             </div>
         </div>
@@ -705,13 +680,13 @@
     <script src="js/agency.min.js"></script>
 
     <script type="text/javascript">
-
         setTimeout(function() {
+            $('html, body')
+            .css({
+              'overflow': 'auto'
+            })
             $('#preloader').fadeOut('slow');
         }, 3500);
-
-
-
     </script>
 
 </body>
