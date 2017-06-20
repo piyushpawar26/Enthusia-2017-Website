@@ -4,8 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 body {
-  overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  overflow: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
 
 p {
   line-height: 1.75; }
@@ -29,12 +30,16 @@ h6 {
     margin-left: 60%;
 }
 
+h4 {
+  color: #222;
+}
+
 section {
-  padding-top: 70px; }
+  padding-top: 50px; }
   section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
-    margin-bottom: 50px; }
+    margin-bottom: 70px; }
   section h3.section-subheading {
     font-size: 16px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -68,13 +73,13 @@ body {
   background-color: #222222; }
   #mainNav .navbar-toggler {
     border: 0;
-    color: white;
+    color: #222;
     background-color: #fed136;
     font-size: 12px;
     text-transform: uppercase;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    padding: 13px;
+    padding: 9px;
     right: 0; }
   #mainNav .container {
     padding: 0; }
@@ -94,6 +99,7 @@ body {
       #mainNav .container .navbar-nav .nav-item .nav-link:hover, #mainNav .container .navbar-nav .nav-item .nav-link.active {
         color: #fed136; }
 
+
 @media (min-width: 992px) {
   #mainNav {
     background-color: transparent;
@@ -106,15 +112,22 @@ body {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+       color: #fed136;}
     #mainNav .navbar-nav .nav-item .nav-link {
       padding: 1.1em 1em !important; }
     #mainNav.navbar-shrink {
-      background-color: #222222;
-      padding: 0; }
+      background-color: #fff;
+      padding: 0;
+      color: #222; }
       #mainNav.navbar-shrink .navbar-brand {
         padding: 12px 0;
-        font-size: 1.25em; } }
+        font-size: 1.25em; }
+      #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+        color: #222; } }
+
+
+
 
 header.masthead {
   background-image: url("../img/bg1.png");
@@ -163,8 +176,15 @@ header.masthead {
       margin-bottom: 50px; } }
 
 .service-heading {
-  margin: 15px 0;
+  margin: 35px 0;
   text-transform: none; }
+
+  
+
+
+  #about_text {
+    color: #222;
+  }
 
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -369,6 +389,7 @@ header.masthead {
   .timeline .timeline-body > ul {
     margin-bottom: 0; }
 
+
 @media (min-width: 768px) {
   .timeline:before {
     left: 50%; }
@@ -437,6 +458,18 @@ header.masthead {
     text-transform: none; }
   .team-member p {
     margin-top: 0; }
+
+
+    #portfolio {
+      background-image: url("../img/events_back1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+    color: white;}
 
 section#contact {
   background-color: #222222;
